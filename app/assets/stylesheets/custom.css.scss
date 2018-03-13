@@ -154,3 +154,14 @@ $colHighlight: #32CD32;
         color: $colHighlight;
         background-color: $bgHighlight; }}}
 }
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chef-title {
+  color: #073b15;
+  font-weight: bold;
+  font-size: 1.25em;
+}
