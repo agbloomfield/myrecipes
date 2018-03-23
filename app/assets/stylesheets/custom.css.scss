@@ -67,6 +67,8 @@ body {
 footer ul li {
   float: left;
   margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer {
@@ -164,4 +166,9 @@ $colHighlight: #32CD32;
   color: #073b15;
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.input_checkbox input {
+  width: auto !important;
+  height: auto;
 }
