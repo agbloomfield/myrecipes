@@ -12,7 +12,8 @@
         <p>Ingredients: <%= render recipe.ingredients%></p>
       <% end %>
       <p>
-        <span class="quiet"></span><small>Created <%= time_ago_in_words(recipe.created_at) %> ago by <%= recipe.chef.chefname.titleize %></small></span>
+        <span class="quiet"></span><small>Created <%= time_ago_in_words(recipe.created_at) %> ago by <%= recipe.chef.chefname.titleize %> 
+                                                          | <%= pluralize(recipe.comments.count, 'Comment') %></small></span>
       </p>
       <% if logged_in? && (current_chef == recipe.chef || current_chef.admin?) %>
         <div class="recipe-actions">
