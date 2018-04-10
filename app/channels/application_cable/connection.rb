@@ -7,16 +7,16 @@ module ApplicationCable
     end
     
     def disconnect
+    
     end
     
     protected
     def find_current_user
-      if current_chef = User.find_by(id: cookies.signed[:chef_id])
+      if current_chef = Chef.find_by(id: cookies.signed[:chef_id])
         current_chef
       else
         reject_unauthorized_connection
       end
     end
-    
   end
 end
